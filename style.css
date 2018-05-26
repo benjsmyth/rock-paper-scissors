@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 730px;
+	background: #ededed;
+	color: #232323;
+	font-family: 'Roboto', sans-serif;
+}
+
+#header1 {
+	height: 110px;
+	text-align: center;
+}
+
+#header1 > h1 {
+	line-height: 110px;
+	letter-spacing: 1px;
+	font-size: 2.6em;
+}
+
+#description {
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 1.3em;
+}
+
+#imgs {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.startgame {
+	height: 240px;
+	transition: all 0.2s ease-in-out;
+}
+
+.startgame:hover {
+	transform: scale(1.05);
+	opacity: 1;
+	cursor: pointer;
+}
+
+.endgame {
+	height: 240px;
+	opacity: 0.7;
+}
+
+#scorearea {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0 30px;
+}
+
+#playerlbl {
+	text-align: center;
+	font-size: 1.4em;
+	font-weight: 500;
+	text-transform: uppercase;
+	height: 120px;
+	line-height: 120px;
+	margin-left: 45px;
+}
+
+#computerlbl {
+	text-align: center;
+	font-size: 1.21em;
+	font-weight: 500;
+	text-transform: uppercase;
+	height: 120px;
+	line-height: 120px;
+}
+
+#scoreboard {
+	height: 120px;
+	width: 300px;
+	margin: 0 30px;
+}
+
+#playerscore {
+	float: left;
+	text-align: center;
+	line-height: 120px;
+	height: 120px;
+	width: 149px;
+	font-size: 7em;
+	border-right: 1px solid black;
+}
+
+#computerscore {
+	float: right;
+	text-align: center;
+	line-height: 120px;
+	height: 120px;
+	width: 149px;
+	font-size: 7em;
+	border-left: 1px solid black;
+}
+
+#announce {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 500;
+	height: 80px;
+	line-height: 80px;
+	box-shadow: 0 0 5px black;
+}
+
+footer {
+	height: 45px;
+	font-size: 0.9em;
+	line-height: 50px;
+}
+
+#codedby {
+	float: left;
+	margin-left: 15px;
+}
+
+#visitme {
+	float: right;
+	margin-right: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: #232323;
+}
+
+a:hover {
+	color: black;
+	font-weight: 500;
+}

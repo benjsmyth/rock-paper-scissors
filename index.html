@@ -1,13 +1,64 @@
+<!--
+Background music: "Adventure Meme" by Kevin MacLeod.
+Win music: "8 Bit Win!" by Heatley Bros.
+Lose music: "Game Over" by RGBMusic.
+Sound effects obtained from youtube.com, freesfx.co.uk, and zapslat.com.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<title>Rock, Paper, Scissors!</title>
-	<script src="script.js" type="text/javascript"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+	<script src="script.js" type="text/javascript" async></script>
 </head>
 
 <body>
+	<div id="header1">
+		<h1>Rock, Paper, Scissors!</h1>
+	</div>
+
+	<div id="description">
+		<p>Welcome! Are you ready to play? The first one to get to five points wins. Just take your pick to begin the game!</p>
+	</div>
+
+	<div id="imgs">
+		<img class="startgame" id="rockimg" src="images/rock.svg"></img>
+		<img class="startgame" id="paperimg" src="images/paper.svg"></img>
+		<img class="startgame" id="scissorsimg" src="images/scissors.svg"></img>
+	</div>
+
+	<div id="scorearea">
+		<div id="playerlbl">
+			<p id="player">Player</p>
+		</div>
+		<div id="scoreboard">
+			<div id="playerscore">0</div>
+			<div id="computerscore">0</div>
+		</div>
+		<div id="computerlbl">
+			<p id="computerlbl">Computer</p>
+		</div>
+	</div>
+
+	<div id="announce">	
+		<p id="announcetext">The score is 0 to 0. Start playing!</p>
+	</div>
+
+	<footer>
+		<p id="codedby">Coded by Ben Smyth, &copy; 2018.</p>
+		<p id="visitme">Visit me on <a href="https://github.com/benjsmyth" target="_blank">Github</a>!</p>
+	</footer>
+
+	<audio id="music" src="sounds/music.mp3"></audio>
+	<audio id="rocksound" src="sounds/rocksound.mp3"></audio>
+	<audio id="papersound" src="sounds/papersound.mp3"></audio>
+	<audio id="scissorssound" src="sounds/scissorssound.mp3"></audio>
+	<audio id="winmusic" src="sounds/winmusic.mp3"></audio>
+	<audio id="losemusic" src="sounds/losemusic.mp3"></audio>
 </body>
 
 </html>
